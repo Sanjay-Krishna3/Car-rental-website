@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" context="width=device-width , initial-scale=1.0">
+        <title>Car Rental Website</title>
+        <link rel = "stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+        <div id="navbar">
+            <ul class = "menu">
+                <li class="logo"><a href="#">Droo</a></li>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#ride">Ride</a></li>
+                <li class="item"><a href="#services">Services</a></li>
+                <li class="item"><a href="#about">About</a></li>
+                <li class="item"><a href="#reviews">Reviews</a></li>
+                <li class="item"><a href="#contact">Contact Us</a></li>
+                <li class="item button" id="log"><a href="#">Login</a></li>
+                <li class="item button secondary" id="reg"><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+        </header>
+
+        <!--Login Form-->
+        <div class="login-form-container">
+            <span class="fa fa-times" id="close-login-form"></span>
+            <form name="logform" action="" onsubmit="return LOG_FORM_VALIDATION()" method="" >
+                <h3>User login</h3>
+                <input type="email" placeholder="email" class="box" name="Email">
+                <input type="password" placeholder="password" class="box" name="Password">
+                <a href="#">Forgot password?</a><br>
+                <input type="submit" value="login now" class="btn">
+                <p>or login with</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Google</a>
+                    <a href="#" class="btn">Facebook</a>
+                </div>
+            </form>
+        </div>
+
+        <!--Register Form-->
+        <div class="register-form-container">
+            <span class="fa fa-times" id="close-register-form"></span>
+            <form  name="regform" action="" onsubmit="return REG_FORM_VALIDATION()" method="">
+                <h3>Sign Up</h3>
+                <input type="email" placeholder="email" class="box" name="Email">
+                <input type="password" placeholder="password" class="box" name="Password">
+                <input type="password" placeholder="confirm password" class="box" name="Cpassword">
+                <input type="submit" value="Sign Up" class="btn">
+                <p>or Sign up with</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Google</a>
+                    <a href="#" class="btn">Facebook</a>
+                </div>
+            </form>
+        </div>
+
+        <!--HOme-->
+        <section class="home" id ="home">
+            <div class = "text">
+                <h1><span>Looking</span> to<br>rent a car</h1>
+                <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.</p>
+                <div class="app-stores">
+                    <img src="img/play.png " alt="">
+                    <img src = "img/app.png" alt ="">
+                </div>
+            </div>
+
+            <div class="location-form-container">
+                <form name="locform" action="" onsubmit="return LOC_FORM_VALIDATION()" method="">
+                    <div class="input-box">
+                        <span>Location</span>
+                        <input type="search" name="Location" id="" placeholder="Search Places">
+                    </div>
+                    <div class="input-box">
+                        <span>Pick-Up Date</span>
+                        <input type="text" name="Pdate" placeholder="DD/MM/YYYY" id="">
+                    </div>
+                    <div class="input-box">
+                        <span>Return Date</span>
+                        <input type="text" name="Rdate"  placeholder="DD/MM/YYYY" id="">
+                    </div>
+                    <input type="submit" name="" id="" class="btn">
+                </form>
+            </div>
+        </section>
+
+<!-- Ride -->
+        <section class="ride" id="ride">
+            <div class="heading">
+                <br><br><span>How It Works</span>
+                <h1>Rent with 3 Easy Steps</h1>
+            </div>
+            <div class="ride-container">
+                <div class="box">
+                    <i class='bx bxs-map'> </i>
+                    <h2>Choose a location </h2>
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.</p>
+                </div>
+
+                <div class="box">
+                    <i class='bx bxs-calendar-check'> </i>
+                    <h2>Pick-Up Date </h2>
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.</p>
+                </div>
+
+                <div class="box">
+                    <i class='bx bxs-car'> </i>
+                    <h2>Book a Car </h2>
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.</p>
+                </div>
+            </div>
+        </section>
+
+<!-- Services -->
+        <section class="services" id="services">
+            <div class="heading">
+                <br><br><span>Best Services</span>
+                <h1>Explore our top deals <br> From top rated dealers</h1>
+            </div>
+            <div class="services-container">
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car 1.jpg" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2018 Ford Mustang</h3>
+                    <h2>Rs.1000000 | Rs.100000 <span>/month</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car 2.jpg" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2018 Ford Mustang</h3>
+                    <h2>Rs.1000000 | Rs.100000 <span>/month</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car 3.jpg" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2018 Ford Mustang</h3>
+                    <h2>Rs.1000000 | Rs.100000 <span>/month</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car 4.jpg" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2018 Ford Mustang</h3>
+                    <h2>Rs.1000000 | Rs.100000 <span>/month</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car 5.jfif" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2018 Ford Mustang</h3>
+                    <h2>Rs.1000000 | Rs.100000 <span>/month</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car 6.jpg" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2018 Ford Mustang</h3>
+                    <h2>Rs.1000000 | Rs.100000 <span>/month</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car 7.jpg" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2018 Ford Mustang</h3>
+                    <h2>Rs.1000000 | Rs.100000 <span>/month</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car 8.jpg" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2018 Ford Mustang</h3>
+                    <h2>Rs.1000000 | Rs.100000 <span>/month</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="heading">
+                <br><br><span>About Us</span>
+                <h1>Best Customer Experience</h1>
+            </div>
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="img/about.jpg" alt="">
+                </div>
+                <div class="about-text">
+                    <span>About Us</span>
+                    <p>Naruto's mother was attacked by the leader of a renegade ninja group when she was most vulnerable: during the birth of her son. The attacker was able to unseal Kushina's beast, and the resulting rampage destroyed the Uzumakis' home village. Both of Naruto's parents were killed in the fight, with his father sacrificing himself to stop the beast's destruction. In the process, he sealed a portion of the beast inside his infant son.</p>
+
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies. </p>
+                    <a href="#" id="btn">Learn more</a>
+                </div>
+            </div>
+        </section>
+        <!-- Review-->
+        <section class="reviews" id="reviews">
+            <div class="heading">
+                <br><br><span>Reviews</span>
+                <h1>What Our customes say</h1>
+            </div>
+            <div class="reviws-container">
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="img/p1.jpg" alt="">
+                    </div>
+                    <h2>Naruto</h2>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies. </p>
+                </div>
+
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="img/p2.jfif" alt="">
+                    </div>
+                    <h2>Hinata</h2>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies. </p>
+                </div>
+
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="img/p3.jfif" alt="">
+                    </div>
+                    <h2>Luffy</h2>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies. </p>
+                </div>
+
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="img/p4.jpg" alt="">
+                    </div>
+                    <h2>neko</h2>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies. </p>
+                </div>
+
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="img/p5.jpg" alt="">
+                    </div>
+                    <h2>zou</h2>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies. </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Us-->
+        <section class="contact" id="contact">
+            <div class="heading">
+                <br><br><h1>Contact Us</h1>
+            </div>
+            
+            <div class="row">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.970286153224!2d135.75689081744383!3d34.982409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108ac3926f211%3A0x3b953275a81b3aa6!2sTimes%20Car%20Rental!5e0!3m2!1sen!2sin!4v1637342855213!5m2!1sen!2sin" 
+                allowfullscreen="" loading="lazy"></iframe>            
+
+                <form name="conform" action="" onsubmit="return CON_FORM_VALIDATION()" method=>
+                    <h3>Get In Touch</h3>
+                    <input type="text" placeholder="name" class="box" name="Name">
+                    <input type="email" placeholder="email" class="box" name="Email">
+                    <input type="text" placeholder="number" class="box" name="Number">
+                    <textarea placeholder="message" class="box" cols="30" rows="10" name="Message"></textarea>
+                    <input type="submit" placeholder="send message" class="btn">
+                </form>
+            </div>
+        </section>
+        <!--copyright-->
+        <div class="copyright">
+            <p>&#169; Droo All Rights Reserved</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <!--Scrollrevel-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--js-->
+        <script src = "main.js"></script>
+    </body>
+</html>
+
+
